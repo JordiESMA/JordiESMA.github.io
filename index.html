@@ -1,1 +1,104 @@
-<h1> BUENAS QUE TAL MI GENTE</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio Web</title>
+</head>
+<body>
+
+    <!-- Botón hamburguesa -->
+    <button id="menuBtn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Menú lateral -->
+    <nav id="sideMenu">
+      <ul>
+        <li><a href="#inicio" class="nav-link" data-idioma="nav_inicio"></a></li>
+        <li><a href="#sobreMi" class="nav-link" data-idioma="nav_sobreMi"></a></li>
+        <li><a href="#sobrePro" class="nav-link" data-idioma="nav_sobrePro"></a></li>
+        <li><a href="#lenguajes" class="nav-link" data-idioma="nav_lenguajes"></a></li>
+        <li><a href="#habilidadesAptitudes" class="nav-link" data-idioma="nav_habilidadesAptitudes"></a></li>
+        <li><a href="#proyectos" class="nav-link" data-idioma="nav_proyectos"></a></li>
+        <li><a href="#contacto" class="nav-link" data-idioma="nav_contacto"></a></li>
+      </ul>
+      <select id="idiomaSelect">
+        <option value="es">Castellano</option>
+        <option value="en">English</option>
+        <option value="ca">Català</option>
+      </select>
+    </nav>
+
+    <div id="overlay"></div>
+
+    <main>
+
+        <!-- Seccion personal -->
+        <section id="inicio" class="hero">
+            <img src="/images/cv.jpeg" height="200px">
+            <h1>Jordi Estirado Martínez</h1>
+            <p data-idioma="inicio_texto"></p>
+        </section>
+
+        <!-- Seccion secciones -->
+        <section id="sobreMi" class="seccion">
+            <h2 data-idioma="sobreMi_titulo"></h2>
+            <p data-idioma="sobreMi_texto"></p>
+        </section>
+
+        <section id="sobrePro" class="seccion">
+            <h2 data-idioma="sobrePro_titulo"></h2>
+            <p data-idioma="sobrePro_texto"></p>
+        </section>
+
+        <section id="lenguajes" class="seccion">
+            <h2 data-idioma="lenguajes_titulo"></h2>
+            <div class="skills-grid">
+                <span class="skill">Java</span>
+                <span class="skill">PHP</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">SQL</span>
+            </div>
+        </section>
+
+        <section id="habilidadesAptitudes" class="seccion">
+            <h2 data-idioma="habilidadesAptitudes_titulo"></h2>
+            <p data-idioma="habilidadesAptitudes_texto"></p>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <h2 data-idioma="proyectos_titulo"></h2>
+            <div class="proyectos-grid">
+                <div class="proyecto">
+                    <h3>EA FC 26 Player Search</h3>
+                    <p data-idioma="proyecto1_texto"></p>
+                </div>
+                <div class="proyecto">
+                    <h3>GymApp</h3>
+                    <p data-idioma="proyecto2_texto"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2 data-idioma="contacto_titulo"></h2>
+            <ul class="contacto-list">
+                <li><a href="mailto:tuemail@email.com" data-idioma="contacto_email"></a></li>
+                <li><a href="#" target="_blank" data-idioma="contacto_linkedin"></a></li>
+                <li><a href="#" target="_blank" data-idioma="contacto_github"></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <p data-idioma="footer_texto"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
